@@ -1,0 +1,44 @@
+$primary-color: #0C0B48;
+$secondary-color: #f66262;
+
+
+// section title same style but color should be change.
+@mixin  section-title($color) {
+  display: inline-block;
+  border-radius: 8px;
+  font-size: 40px;
+  text-transform: capitalize;
+  padding-bottom: 8px;
+  color: $color;
+  // border-bottom: 2px dotted $color;
+}
+
+
+// resume all content style same but color should be change.
+@mixin resume-year-map($year-map-bg){
+  background-color: $year-map-bg;
+  color: lighten($year-map-bg, 70%);
+  padding: 15px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+@function left-text-color ($color){
+  @if (lightness($color) > 40%) {
+    @return #333;
+
+  } @else {
+    @return #fff;
+    
+  }
+}
+
+@function main-text-color ($color){
+  @if (lightness($color) > 40%) {
+    @return #fff;
+    
+  } @else {
+    @return #333;
+
+  }
+}

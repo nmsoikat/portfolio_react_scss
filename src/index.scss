@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,400&display=swap');
+
+@import './scss/config';
+@import './component/App.scss';
+@import './component/LeftMenu/LeftMenu.scss';
+@import './component/About/About.scss';
+@import './component/Resume/Resume.scss';
+@import './component/Portfolio/Portfolio.scss';
+@import './component/Portfolio/PortfolioItem/PortfolioItem.scss';
+@import './component/Portfolio/PortfolioMenu/PortfolioMenu.scss';
+
+@import './scss/responsive';

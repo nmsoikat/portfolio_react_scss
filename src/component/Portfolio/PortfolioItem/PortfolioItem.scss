@@ -1,0 +1,65 @@
+.project {
+  border-radius: 5px;
+  background-color: lighten($primary-color, 80%);
+  text-align: center;
+  padding: 5px;
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  
+  &__image{
+    max-height: 300px;
+    overflow: hidden;
+
+    img {
+      width: 100%;
+      transform: translateY(0);
+      transition: all 5s linear;
+    }
+
+  }
+     
+  &__desc {
+    position: absolute;
+    bottom: -50%;
+    left: 0;
+    height: fit-content;
+    width: 100%;
+    padding: 8px 5px;
+    background-color: lighten($primary-color, 50%);
+    overflow: hidden;
+    visibility: hidden;
+    opacity: 0;
+    border-radius: 0 0 5px 5px;
+    transition: all .5s ease-in-out .5s;
+    color: lighten($primary-color, 100%);
+  }
+
+  &:hover{
+    background-color: lighten($primary-color, 70%);
+
+    .project__desc {
+      visibility: visible;
+      opacity: 1;
+      bottom: 0;
+    }
+
+    .project__image{
+      img {
+        width: 100%;
+        transform: translateY(calc(-100% + 300px + 16px));
+      }
+    }
+
+  }
+
+}
+
+@media (max-width: 991px) {
+  .project {
+    &__image{
+      max-height: 300px;
+      overflow: hidden;
+    }
+  }
+}

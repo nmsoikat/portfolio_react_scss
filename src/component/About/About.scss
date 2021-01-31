@@ -1,0 +1,161 @@
+.about {
+  .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .info-left {
+      width: 60%;
+
+      &__name {
+        font-size: 50px;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      &__designation {
+        font-size: 14px;
+        color: main-text-color($primary-color);
+        margin-bottom: 15px;
+      }
+
+      &__description {
+        color: main-text-color($primary-color);
+        margin-bottom: 30px;
+      }
+    }
+
+    .info-right {
+      // width: 50%;
+
+      .my-image {
+        width: 300px;
+
+        &__profile-image {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .skill-area__title {
+    text-align: center;
+  }
+
+  .skills__item {
+    font-size: 55px;
+    padding: 15px;
+  }
+  .html {
+    color: #e34c26;
+  }
+  .css {
+    color: #264de4;
+  }
+  .bootstrap {
+    color: #563d7c;
+  }
+  .sass {
+    color: #cd6799;
+  }
+  .js {
+    color: #323330;
+  }
+  .react {
+    color: #61dbfb;
+  }
+  .node {
+    color: #3c873a;
+  }
+  .git {
+    color: #f34f29;
+  }
+  .sills__name {
+    display: block;
+    font-size: 20px;
+  }
+  .skills__item {
+    text-align: center;
+  }
+
+  .contact-area {
+    margin-top: 57px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+
+    .social-icons {
+      line-height: normal;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: center;
+
+      .item {
+        display: inline-block;
+        font-size: 34px;
+        color: #0c0b48;
+        margin-right: 10px;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .item:last-child {
+        margin-right: 0px;
+      }
+      .item.linkedIn:hover {
+        color: #0e76a8;
+      }
+      .item.facebook:hover {
+        color: #0088dc;
+      }
+      .item.github:hover {
+        color: #6e5494;
+      }
+      .item.hackerRank:hover {
+        color: #1ba94c;
+      }
+    }
+  }
+
+  .btn-resume {
+    position: relative;
+    border-radius: 3px;
+    z-index: 1;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-resume:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 3%;
+    background-color: #ddd;
+    left: 0%;
+    top: 0%;
+    z-index: -1;
+    transition: all 0.5s ease-in-out;
+    opacity: 0;
+    /* transform: translate(-50%, -50%); */
+    // border-radius: 100%;
+  }
+
+  .btn-resume:hover:before {
+    background-color: #f66262;
+    /* width: 100%; */
+    height: 100%;
+    opacity: 1;
+    // border-radius: 0%;
+  }
+
+  .btn-resume:hover {
+    color: #fff;
+    border-color: #e8bdbd;
+  }
+}

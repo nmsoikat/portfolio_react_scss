@@ -1,0 +1,155 @@
+.resume {
+  .resume__title {
+    @include section-title($secondary-color);
+    margin-bottom: 10px;
+  }
+
+
+
+  &__detail {
+
+    .resume-content {
+      display: flex;
+      border-radius: 6px;
+      width: 800px;
+      margin-bottom: 15px;
+      position: relative;
+
+      &__responsibility h4 {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 0px;
+      }
+      &__responsibility ul li {
+        position: relative;
+        padding-left: 15px;
+      }
+
+      &__responsibility ul li:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -4px;
+        width: 8px;
+        height: 8px;
+        content: "";
+        background-color: #8a8a8a;
+      }
+      
+      &__year-map {
+        @include resume-year-map($secondary-color);
+        width: 25%;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+          font-size: 20px;
+          font-weight: bold;
+          span {
+            display: block;
+          }
+        }
+      }
+
+      &__desc {
+        background-color: lighten($secondary-color, 60%);
+        padding: 15px;
+        width: 75%;
+      }
+
+      &__company-name {
+        font-size: 18px;
+        font-style: italic;
+      }
+
+      &__designation {
+        font-size: 28px;
+        font-weight: bold;
+      }
+
+      &__responsibility {
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+.edu-qualification {
+  &__title {
+    @include section-title(#f662a9);
+    margin-bottom: 10px;
+  }
+
+  .resume-content__year-map {
+    @include resume-year-map(#f662a9);
+  }
+
+  .resume-content__desc {
+    background-color: lighten(#f662a9, 60%);
+  }
+}
+
+@media (max-width: 1050px) {
+  .resume {
+    &__detail {
+      .resume-content {
+        display: block;
+        width: 100%;
+        &__year-map {
+          width: 100%;
+          h3 {
+            span {
+              display: inline-block;
+            }
+          }
+        }
+
+        &__desc {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+/* Large Device lg */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Medium Device md */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .resume__detail .resume-content__designation {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  .resume__detail .resume-content__company-name {
+    font-size: 19px;
+    font-style: italic;
+  }
+}
+
+/* Medium To Extra Small Device */
+@media only screen and (max-width: 767px) {
+  .resume__detail .resume-content__designation {
+    font-size: 25px;
+    margin-bottom: 5px;
+  }
+  .resume__detail .resume-content__company-name {
+    font-size: 19px;
+    font-style: italic;
+  }
+  .resume .resume__title,
+  .edu-qualification__title {
+    font-size: 30px;
+  }
+}
+
+/* Small Device sm */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+}
+
+/* Extra Small device */
+@media only screen and (max-width: 575px) {
+}
