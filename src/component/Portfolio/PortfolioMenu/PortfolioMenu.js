@@ -7,7 +7,7 @@ function PortfolioMenu() {
         <NavLink
           exact
           activeClassName="activeLink"
-          to="/portfolio/all"
+          to="/portfolio/portfolio/all"
           className="project-menu__link"
         >
           All
@@ -16,7 +16,7 @@ function PortfolioMenu() {
       <li className="project-menu__item">
         <NavLink
           activeClassName="activeLink"
-          to="/portfolio/react"
+          to="/portfolio/portfolio/react"
           className="project-menu__link"
         >
           React
@@ -25,7 +25,7 @@ function PortfolioMenu() {
       <li className="project-menu__item">
         <NavLink
           activeClassName="activeLink"
-          to="/portfolio/webDesign"
+          to="/portfolio/portfolio/webDesign"
           className="project-menu__link"
         >
           Web Design

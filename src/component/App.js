@@ -21,17 +21,17 @@ class App extends react.Component {
             <div className="col-md-9 col-lg-10">
               <main>
                 <Switch>
-                  <Route exact path="/" component={About} />
-                  <Route path="/resume" component={Resume} />
+                  <Route exact path="/portfolio" component={About} />
+                  <Route path="/portfolio/resume" component={Resume} />
                   <Route
-                    path="/portfolio/:category"
+                    path="/portfolio/portfolio/:category"
                     component={({ match: { params } }) => {
                       // console.log(props);
                       // console.log(params.category);
                       return <Portfolio category={params.category} />;
                     }}
                   />
-                  <Route path="/portfolio" component={Portfolio} />
+                  <Route path="/portfolio/portfolio" component={Portfolio} />
                 </Switch>
               </main>
             </div>

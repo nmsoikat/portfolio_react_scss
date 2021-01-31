@@ -8,7 +8,7 @@ function LeftMenu() {
           <NavLink
             exact
             activeClassName="activeLink"
-            to="/"
+            to="/portfolio"
             className="menu__link"
           >
             About
@@ -17,7 +17,7 @@ function LeftMenu() {
         <li className="menu__item">
           <NavLink
             activeClassName="activeLink"
-            to="/resume"
+            to="/portfolio/resume"
             className="menu__link"
           >
             Resume
@@ -26,7 +26,7 @@ function LeftMenu() {
         <li className="menu__item">
           <NavLink
             activeClassName="activeLink"
-            to="/portfolio/all"
+            to="/portfolio/portfolio/all"
             className="menu__link"
           >
             Portfolio
