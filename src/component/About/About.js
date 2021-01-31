@@ -37,7 +37,10 @@ function About() {
             methodology. I love my designation, I believe on my skills.
           </p>
 
-          <a href="#!" className="button btn-resume">
+          <a
+            href="/portfolio/file/Nur__Front-End.pdf"
+            className="button btn-resume"
+          >
             Download Resume
           </a>
         </div>
@@ -46,7 +49,7 @@ function About() {
           <figure className="my-image">
             <img
               className="my-image__profile-image"
-              src="/img/profile-img.png"
+              src="/portfolio/img/profile-img.png"
             />
           </figure>
           <article className="social-icons"></article>
